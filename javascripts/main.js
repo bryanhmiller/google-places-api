@@ -37,7 +37,7 @@ $(document).ready(function(){
 	const writeAddressToDOM = (address) => {
 		let outputString = `<div>${address}</div>`;
 		$("#addresses").append(outputString);
-	}
+	};
 
 	const writePlaceToDOM = (results) => {
 		let outputString = "";
@@ -45,5 +45,5 @@ $(document).ready(function(){
 			outputString += `<a href="#"><div class="place" id="${results[i].place_id}">${results[i].name}</div></a>`;
 		}
 		$("#input").append(outputString);
-	}
+	};
 });
